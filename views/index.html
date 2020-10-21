@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <header>
+        <h1>URL Shortener</h1>
+        <h2>Well, it would be if I owned a short domain...</h2>
+    </header>
+    <main>
+        <form enctype="application/x-www-form-urlencoded" method="post" action="/api/shorturl/new" >
+            <label>
+                URL<br/>
+                <input type="url" name="url" required />
+            </label>
+            <button type="submit">Shorten</button>
+        </form>
+    </main>
+</body>
+</html>
